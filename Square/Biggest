@@ -1,0 +1,17 @@
+echo "Enter number:"
+read n
+square=$((n*n))
+echo "Square is $square"
+
+echo "Enter 3 numbers:"
+read a b c
+
+if [ $a -gt $b ] && [ $a -gt $c ]
+then
+echo "$a is biggest"
+elif [ $b -gt $c ]
+then
+echo "$b is biggest"
+else
+echo "$c is biggest"
+fi
